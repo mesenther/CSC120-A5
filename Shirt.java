@@ -1,16 +1,16 @@
-/*
- * Shirt class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
- */
+/* Shirt class can display shirt */
 public class Shirt {
 
-    /*
-     * TODO: Modify this method to print ASCII Art Shirt
-     */
+    /* Prints ASCII art of shirt */
     public void display() {
-        System.out.println("Shirt?);
+        System.out.println("          :-------:           ");
+        System.out.println(" ___  ------------------ ___");
+        System.out.println(" |||  --------O--------- |||");
+        System.out.println(" |||  --------O--------- |||");
+        System.out.println(" |||  --------O--------- |||");
+        System.out.println(" |||  --------O--------- |||");
+        System.out.println(" OOO  --------O--------- OOO");
+        System.out.println("  OO  --------O--------- OO");
     }
 
     /* main method (for testing) */

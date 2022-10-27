@@ -1,26 +1,20 @@
-/*
- * Boot class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
- */
+/* Boot class can display both left and right boots */
 public class Boot {
-  
+
+    /* Direction of boot */
     private String direction;
   
-    /* Constructor */
+    /* Constructor creates boot object with either left or right direction */
     public Boot(String direction) {
         this.direction = direction.toLowerCase();
     }
 
-    /*
-     * TODO: Modify this method to print ASCII Art Boot
-     */
+    /* Prints ASCII art of either left or right boot if direction is left or right */
     public void display() {
         if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
+          System.out.print(" [[[[[[[");
         } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
+          System.out.print("               ]]]]]]]");
         } else {
           System.out.println("Which boot?");
         }

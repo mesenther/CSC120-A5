@@ -1,14 +1,7 @@
-/*
- * Pumpkin class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
- */
+/* Pumpkin class can display a pumpkin head */
 public class Pumpkin {
     
-    /*
-     * Prints ASCII art depicting a jack-o'-lantern to the console
-     */
+    /* Prints ASCII art depicting a jack-o'-lantern to the console */
     public void display() {
 
         System.out.println("              ___");

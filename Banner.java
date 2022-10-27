@@ -1,29 +1,28 @@
-/*
- * Banner class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
- */
+/* Banner class can display a banner with a given message */
 public class Banner {
     
     /* Message to print on Banner */
     private String message;
 
-    /* Constructor */
+    /* Constructor creates banner with given message */
     public Banner(String m) {
         this.message = m;
     }
 
-    /*
-     * TODO: Modify this method to print a decorative banner, resized to fit the message
-     */
+    /* Prints ASCII banner with a given message; resizes based on message length */
     public void display() {
         System.out.println(this.message);
+        System.out.println("   " + "*".repeat(this.message.length()+1) + "   ");
+        System.out.println("*** " + "~".repeat(this.message.length()) + " ***");
+        System.out.println("*** " + this.message + " ***");
+        System.out.println("*** " + "~".repeat(this.message.length()) + " ***");
+        System.out.println("   " + "*".repeat(this.message.length()+1) + "   ");
+
     }
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Banner myBanner = new Banner("Hello world");
+        Banner myBanner = new Banner("Happy fall everyone!!!");
         myBanner.display();
     }
 }
