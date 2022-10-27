@@ -11,7 +11,6 @@ public class Banner {
 
     /* Prints ASCII banner with a given message; resizes based on message length */
     public void display() {
-        System.out.println(this.message);
         System.out.println("   " + "*".repeat(this.message.length()+1) + "   ");
         System.out.println("*** " + "~".repeat(this.message.length()) + " ***");
         System.out.println("*** " + this.message + " ***");
